@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calcula.css">
+</head>
+<body>
+    <section>
+        <div class="pp">
+            <div class="oo">
+                <h1>Calculator</h1>
+                <input type="text" class="north" id="one">
+
+                <div class="uu">
+                    <button class="ball1" onclick="addition()" >+</button>
+                    <button class="ball2" onclick="subtraction()">-</button>
+                    <button class="ball3" onclick="multiplication()">*</button>
+                </div>
+    
+                <div class="uu">
+                    <button  class="hall1" onclick="one()">1</button>
+                    <button class="hall2" onclick="two()">2</button>
+                    <button class="hall3" onclick="three()">3</button>
+                </div>
+    
+                <div class="uu">
+                    <button  class="mall1" onclick="four()">4</button>
+                    <button class="mall2" onclick="five()">5</button>
+                    <button class="mall3" onclick="six()">6</button>
+                </div>
+    
+                <div class="uu">
+                    <button  class="tall1" onclick="seven()">7</button>
+                    <button class="tall2" onclick="eight()">8</button>
+                    <button class="tall3" onclick="nine()">9</button>
+                </div>
+    
+                <div class="uu">
+                    <button class="call" onclick="percentage()">%</button>
+                    <button class="call" onclick="division()">/</button>
+                    <button class="call" onclick="point()">.</button>
+    
+                </div>
+    
+                <div class="rr">
+                    <button  class="mall1" onclick="zero()">0</button>
+                    <button onclick="clearCal()">AC  </button>
+                    <button onclick="DEL()">DEL</button>
+                    <button class="mall4" onclick="equals()">=</button>
+                </div>
+    
+
+            </div>
+        </div>
+
+
+        <script>
+             function clearCal(){
+            document.getElementById("one").value="";
+        }
+        
+        function one(){
+            let output = document.getElementById("one").value +=  "1"
+            }
+
+        function two(){
+            document.getElementById("one").value += "2"
+        }
+
+        function three(){
+            document.getElementById("one").value += "3"
+        }
+        function four(){
+            document.getElementById("one"). value += "4"
+        }
+        function five(){
+            document.getElementById("one").value += "5"
+        }
+        function six(){
+            document.getElementById("one").value += "6"
+        }
+        function seven(){
+            document.getElementById("one"). value += "7"
+        }
+        function eight(){
+            document.getElementById("one").value +="8"
+        }
+        function nine(){
+            document.getElementById("one"). value +="9"
+        }
+        function zero(){
+             document.getElementById("one").value +="0"
+        }
+        function addition(){
+            document.getElementById("one").value += "+"
+        }
+        function subtraction(){
+            document.getElementById("one").value += "-"
+        }
+        function multiplication(){
+          document.getElementById("one"). value += "*"
+        }
+        
+        
+        function percentage(){
+           let output=document.getElementById("one").value += "%"
+           let percent = output/100
+           percent.value=document.getElementById("one").value
+        }
+        
+        
+        function equals(){
+        document.getElementById("one").value = eval(document.getElementById("one").value)
+        }
+        
+      
+
+        function DEL(){
+           let output = document.getElementById("one")
+           output.value=output.value.slice(0,-1)
+            
+
+        }
+
+        function point(){
+            document.getElementById("one").value += "."
+        }
+        
+
+        </script>
+    </section>
+</body>
+</html>

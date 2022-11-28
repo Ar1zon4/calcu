@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.pp{
+    background-color: black;
+    height: 900px;
+}
+
+.north{
+    width: 60%;
+    height: 70px;
+    padding-left: 20px;
+}
+
+.uu{
+    padding-top: 20px;
+    
+}
+h1{
+    padding-left: 50px;
+    padding-bottom: 30px;
+    text-shadow: 5px, 5px;
+    
+}
+
+.oo{
+    border: 1px solid black;
+    width: 40%;
+    padding-left: 150px;
+    height: 600px;
+    border-radius: 10%;
+    margin: 0 auto;
+    padding-top: 60px;
+    background-color: aqua;
+    box-shadow: 5px 5px;
+}
+
+.uu button{
+    width: 20%;
+    height: 50px;
+    background-color: rgb(36, 29, 29);
+    padding-top: 20px;
+    color: beige;
+    opacity: 0.9;
+}
+
+.rr{
+    padding-top: 20px;
+}
+
+.rr button{
+        width: 14.7%;
+        height: 30px;
+        background-color: rgb(36, 29, 29);  
+        color: beige;
+    
+}
+    
